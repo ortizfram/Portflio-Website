@@ -18,6 +18,10 @@ nav{
     width: 100%;
     top: 0;
     left: 0;
+    /*to fix it in big monitors*/
+    max-width: 992px;
+    margin: 0 auto;
+    
 }
 
 /*styles*/
@@ -25,6 +29,10 @@ nav{
     /*logo left, options right*/
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    left: 0;
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 /*text color*/
@@ -51,6 +59,7 @@ a.nav-menu-link {
     margin-right: 40px;
     /*delete points of list*/
     list-style: none;
+  
 }
 
 /*style nav menu ITEM*/
@@ -68,10 +77,99 @@ a.nav-menu-link {
 /*size of hover box*/
 .nav-menu-link{
     padding: 8px 12px;
+    
 }
 
 
 /*colorize w hover*/
-.nav-menu-link:hover{
+.nav-menu-link:hover,
+.nav-menu-link-active{
     background-color: lightgreen;
+    transition: .4s;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+/*-------------------------------------------------*/
+/*for mobile*/
+@media (max-width: 768px){
+
+body{
+    padding-top: 70px ;
+}
+
+.logo{
+    font-size:25px ;
+    font-weight: bold;
+    padding: 0 20px;
+    /*center it with header height*/
+    line-height: 60px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*nav bar style*/
+.nav-menu{
+    /*vertical elements display*/
+   flex-direction: column;
+   align-items: center;
+    margin-right: 20px;
+    background-color: #343538;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    /*scroll menu*/
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left .3s;
+}
+
+/*style nav menu ITEM*/
+.nav-menu-link{
+    font-size: 18px ;
+    /*separete sides*/
+    margin: 0 17px;
+    /*align with bar centered*/
+    line-height: 70px;
+    text-transform:uppercase ;
+    /*to not cut words recizing*/
+    width: max-content;
+}
+
+/*size of hover box*/
+.nav-menu-link{
+    padding: 8px 12px;
+    
+}
+
+
+/*colorize w hover*/
+.nav-menu-link:hover,
+.nav-menu-link-active{
+    background: none;
+    color: aqua;
+}
+
+.nav-toggle{
+    display: block;
+}
+
+.nav-menu_visible{
+left: 0;
+}
+    
 }
