@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    /*add space between Bar and text*/
+    padding: 100px 20px 0;
+}
+
+/*header*/
+nav{
+    background-color: #1d1e21;
+    height: 80px;
+    /*position fix when scroll*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*styles*/
+.nav{
+    /*logo left, options right*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*text color*/
+a.nav-menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size:40px ;
+    font-weight: bold;
+    padding: 0 40px;
+    /*center it with header height*/
+    line-height: 80px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*nav bar style*/
+.nav-menu{
+    /*Horizontal elements*/
+    display: flex;
+    margin-right: 40px;
+    /*delete points of list*/
+    list-style: none;
+}
+
+/*style nav menu ITEM*/
+.nav-menu-link{
+    font-size: 18px ;
+    /*separete sides*/
+    margin: 0 17px;
+    /*align with bar centered*/
+    line-height: 80px;
+    text-transform:uppercase ;
+    /*to not cut words recizing*/
+    width: max-content;
+}
+
+/*size of hover box*/
+.nav-menu-link{
+    padding: 8px 12px;
+}
+
+
+/*colorize w hover*/
+.nav-menu-link:hover{
+    background-color: lightgreen;
+}
