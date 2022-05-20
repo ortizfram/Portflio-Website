@@ -1,89 +1,34 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <title>Portfolio Website</title>
-
-
-
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/98d1538458.js" crossorigin="anonymous"></script>
+    <!---defe = to link the JS at the beggining-->
+    <script defer src="index.js"></script>
 
 </head>
 
 <body>
-
-    <section class="hero">
-        <div class="main-width">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-f"></i>
-                </div>
-
-                <nav>
-                    <div class="hamb">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <ul class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Works</a></li>
-                        <li class="btn"><a href="#">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div class="container">
-                <div class="hero-text">
-                    <h3>Hi, There!</h3>
-                    <h1>I am <span class="input"></span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam, nobis odit quaerat cumque
-                        nisi maiores dolorem a voluptatem, molestias temporibus, sint perspiciatis tenetur in
-                        doloremque! Doloremque accusamus hic consequuntur.</p>
-
-                    <div class="social">
-                        <a href="#"><i class="fa-solid fa-envelope"></i></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <script type="text/javascript" src="js/script.js></script>
-
-    <script src=" https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new typed(".input", {
-            strings: ["Franco Ortiz.", "Web Developer.", "UX designer."],
-            typeSpeed: 70,
-            backSpeed: 60,
-            loop: true
-        });
-    </script>
+    <div class="hero">
+        <header class="header"></header>
+        <nav class="nav">
+            <a href="" class="logo ">ORTIZ</a>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-meu-item"><a href="#" class="nav-menu-link">Works</a></li>
+                <li class="nav-meu-item"><a href="#" class="nav-menu-link">About Me</a></li>
+                <li class="nav-meu-item"><a href="#" class="nav-menu-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 
 </html>
