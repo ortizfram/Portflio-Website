@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+
 .hero{
   height: 100%;
   width: 100%;
@@ -16,8 +17,17 @@
 body {
   font-family: sans-serif;
   /*add space between Bar and text*/
-  padding: 100px 20px 0;
+  padding: 500px 200px ;
   background-color: black;
+  /*gif*/
+  background-image: url(https://preview.redd.it/20x7klt6atn71.gif?width=400&auto=webp&s=1b8146180a31a9a470188980cc06c357e2b479ec);
+  background-position: right;
+  align-content: flex;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  /*text white*/
+  color: #fff;
+  
 }
 
 /*header*/
@@ -30,9 +40,9 @@ nav {
   top: 0;
   left: 0;
   /*to fix it in big monitors*/
-  max-width: 992px;
   margin: 0 auto;
 }
+
 
 /*styles*/
 .nav {
@@ -41,8 +51,9 @@ nav {
   justify-content: space-between;
   width: 100%;
   left: 0;
-  max-width: 992px;
-  margin: 0 auto;
+  right: 0;
+  
+  margin: 0 0;
 }
 
 /*text color*/
@@ -109,7 +120,8 @@ a.nav-menu-link {
 /*for mobile*/
 @media (max-width: 768px) {
   body {
-    padding-top: 70px;
+    padding-top: 80px 0;
+    background-size: 80%;
   }
 
   .logo {
