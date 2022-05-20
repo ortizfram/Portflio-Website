@@ -1,198 +1,73 @@
-* {
+
+body{
+  top: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.hero {
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  padding: 0 0;
-  margin: 0 0;
-  display: flex;
-}
-
-body {
-  font-family: sans-serif;
-  /*add space between Bar and text*/
-  padding: 500px 200px;
-  background-color: black;
-  /*gif*/
-  background-image: url(https://preview.redd.it/20x7klt6atn71.gif?width=400&auto=webp&s=1b8146180a31a9a470188980cc06c357e2b479ec);
-  background-position: right;
-  align-content: flex;
-  background-size: 40%;
-   background-repeat: no-repeat;
-  /*text white*/
-  color: #fff;
-}
-
-/*header*/
-nav {
-  background-color: #1d1e21;
-  height: 80px;
-  /*position fix when scroll*/
-  position: fixed;
-  width: 100%;
+header{
   top: 0;
   left: 0;
-  /*to fix it in big monitors*/
-  margin: 0 auto;
-}
-
-/*styles*/
-.nav {
-  /*logo left, options right*/
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  left: 0;
-  right: 0;
-
-  margin: 0 0;
+  height: 80px;
+  background-color: #1D1E21
+  position: fixed;
+  z-index:1000 ;
 }
 
-/*text color*/
-a.nav-menu-link {
-  color: white;
+.top-bar{
+  margin-top: 2%;
+  margin-left: 28%;
+}
+
+.work, .about, .tech, .contact{
   text-decoration: none;
+  font-size: 25px;
+  padding-left: 40px;
+  color: #1D1E21;
+  font-family: sans-serif;
 }
 
-.logo {
+
+.section1{
+  width: 100%;
+  background-color: aqua;
+  height: 660px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+section2{
+  width: 100%;
+  background-color: #A52A2A;
+  height: 660px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.section3{
+  width: 100%;
+  height: 660px;
+  background-color: #800000;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.section4{
+  width: 100%;
+  height: 660px;
+  background-color: #A0522D;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.logo-bar {
   font-size: 40px;
   font-weight: bold;
   padding: 0 40px;
   /*center it with header height*/
   line-height: 80px;
   text-decoration: none;
-  color: white;
-}
-
-/*nav bar style*/
-.nav-menu {
-  /*Horizontal elements*/
-  display: flex;
-  margin-right: 40px;
-  /*delete points of list*/
-  list-style: none;
-}
-
-/*style nav menu ITEM*/
-.nav-menu-link {
-  font-size: 18px;
-  /*separete sides*/
-  margin: 0 17px;
-  /*align with bar centered*/
-  line-height: 80px;
-  text-transform: uppercase;
-  /*to not cut words recizing*/
-  width: max-content;
-}
-
-/*size of hover box*/
-.nav-menu-link {
-  padding: 8px 12px;
-}
-
-/*colorize w hover*/
-.nav-menu-link:hover,
-.nav-menu-link-active {
-  background-color: lightgreen;
-  transition: 0.4s;
-}
-
-.nav-toggle {
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
-  cursor: pointer;
-
-  display: none;
-}
-/*-------------------------------------------------*/
-
-.stats {
-  justify-content: flex-start;
-  margin: -60px -100px;
-  margin-top: -370px;
-  padding: 0 3px;
-  width: 200px;
-}
-
-/*-------------------------------------------------*/
-/*-------------------------------------------------*/
-/*-------------------------------------------------*/
-/*for MOBILE*/
-@media (max-width: 768px) {
-  body {
-    padding-top: 80px 0;
-    background-size: 80%;
-  }
-
-  .logo {
-    font-size: 25px;
-    font-weight: bold;
-    padding: 0 20px;
-    /*center it with header height*/
-    line-height: 60px;
-    text-decoration: none;
-    color: white;
-  }
-
-  /*nav bar style*/
-  .nav-menu {
-    /*vertical elements display*/
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    background-color: #343538;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-
-    /*scroll menu*/
-    height: calc(100% - 60px);
-    overflow-y: auto;
-
-    left: 100%;
-    transition: left 0.3s;
-  }
-
-  /*style nav menu ITEM*/
-  .nav-menu-link {
-    font-size: 18px;
-    /*separete sides*/
-    margin: 0 17px;
-    /*align with bar centered*/
-    line-height: 70px;
-    text-transform: uppercase;
-    /*to not cut words recizing*/
-    width: max-content;
-  }
-
-  /*size of hover box*/
-  .nav-menu-link {
-    padding: 8px 12px;
-  }
-
-  /*colorize w hover*/
-  .nav-menu-link:hover,
-  .nav-menu-link-active {
-    background: none;
-    color: aqua;
-    size: 22px;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-menu_visible {
-    left: 0;
-  }
+  color: #1D1E21;
 }
