@@ -111,9 +111,31 @@ button:hover {
   box-shadow: none;
 }
 
-
 .main img {
   width: 30vw;
   height: 520px;
   border: 7px solid orangered;
+}
+
+.container {
+
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: orangered;
+  color: #191c32;
+}
+
+.about img {
+  grid-column: 2/5;
+}
+
+.info-content-2 {
+grid-column: 4/5;
+}
+
+.info-content-2 h1 {
+  font-size: 4  em;
 }
