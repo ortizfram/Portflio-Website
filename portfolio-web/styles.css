@@ -57,6 +57,10 @@ body {
   transition: ease-in 0.5s;
 }
 
+.info-content {
+ padding-right: 4em;
+}
+
 .main {
   margin: 0 auto;
   width: 80vw;
@@ -67,6 +71,14 @@ body {
 
   align-items: center;
 }
+.main h1 {
+  font-size: 3em;
+}
+
+.main h1 span {
+  color: aqua;
+}
+
 
 button {
   
@@ -84,17 +96,11 @@ button {
   box-shadow: 1px 3px 11px -5px rgba(102, 123, 200, 0.69);
 }
 
-.main button {
- 
+button:hover {
+  background-color: #fff;
+  font-size: 400;
 }
 
-.main h1 {
-  font-size: 3em;
-}
-
-.main h1 span {
-  color: aqua;
-}
 
 .main img {
   width: 30vw;
