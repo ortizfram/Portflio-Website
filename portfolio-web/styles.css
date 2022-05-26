@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -9,15 +10,19 @@ body {
 }
 
 .wrapper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #191c32;
+  position: relative;
+  overflow: hidden;
 }
 
 .navbar {
+  margin-right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 2em ;
+  width: 100vw;
   background-color: #191c32;
 }
 
@@ -59,7 +64,7 @@ body {
 
 .sidebar {
   min-height: 100vh;
-  padding:4% ;
+  padding:3%  ;
   width: 30%;
   position: fixed;
   justify-content: center;
@@ -68,6 +73,7 @@ body {
   color: #fff;
   background-color: #191c32;
 }
+
 
 .sidebar img {
   margin: 0 auto 20px;
@@ -85,7 +91,7 @@ body {
 }
 .info-content h1 {
   line-height: 1.4;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .info-content h1 span {
@@ -119,11 +125,18 @@ button:hover {
 
 .about {
   margin-left: 30%;
-  padding: 3rem;
+  padding: 6rem;
   justify-content: center;
   align-items: center;
 
   background-color: #fff
+}
+
+.about-info {
+  justify-content: center;
+  justify-items: center;
+  padding-right: 30em;
+  width: 80vw;
 }
 
 .about img {
