@@ -71,12 +71,22 @@ body {
 
   align-items: center;
 }
+
+.main p {
+  line-height: 0.10em;
+}
 .main h1 {
   font-size: 3em;
+  
 }
 
 .main h1 span {
   color: aqua;
+}
+
+.main h3 {
+  font-size: 4em;
+  line-height: 0.8em;
 }
 
 
@@ -98,10 +108,12 @@ button {
 
 button:hover {
   background-color: #fff;
-  font-size: 400;
+  box-shadow: none;
 }
 
 
 .main img {
   width: 30vw;
+  height: 520px;
+  border: 7px solid orangered;
 }
