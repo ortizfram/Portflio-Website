@@ -57,15 +57,20 @@ body {
   transition: ease-in 0.5s;
 }
 
+
+.wrap2 { /*grabs all except manu*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
 .sidebar {
   min-height: 100vh;
   padding:4% ;
-  top:11%;
-  left: 0;
   width: 30%;
-  justify-content: center;
-  text-align: left;
   position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
   color: #fff;
   background-color: #191c32;
 }
@@ -80,11 +85,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 10%;
-}
-
-.wrap2 { /*grabs all except manu*/
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
 }
 
 .info-content p {
@@ -124,3 +124,7 @@ button:hover {
   box-shadow: none;
 }
 
+.about {
+  margin-left: 70%;
+  padding: 3rem;
+}
